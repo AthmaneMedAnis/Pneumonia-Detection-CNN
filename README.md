@@ -56,6 +56,7 @@ We use a **Transfer Learning** approach:
 ├── models/             # Saved .keras models
 ├── README.md           # Project documentation
 └── requirements.txt    # Python dependencies
+```
 ## 🚀 How to Run
 
 1.  **Clone the repository:**
