@@ -3,7 +3,6 @@
 ![Python](https://img.shields.io/badge/Python-3.8%2B-blue)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
 ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-CNN-red)
-![License](https://img.shields.io/badge/License-MIT-green)
 
 ## 📌 Project Overview
 
