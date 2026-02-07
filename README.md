@@ -36,24 +36,21 @@ The model was evaluated on an unseen Test Set of 624 images.
 We use a **Transfer Learning** approach:
 * **Backbone:** **VGG16** (pre-trained on ImageNet) is used as a feature extractor. The convolutional base is frozen.
 * **Head:** A custom classification head is added:
-    * `GlobalAveragePooling2D`
-    * `Dense` layer (ReLU activation)
-    * `Dropout` (0.5) to reduce overfitting
-    * `Dense` Output layer (Sigmoid activation)
+    * `Flatten` layer to convert 2D feature maps into a 1D vector.
+    * `Dense` Output layer (1 neuron) with **Sigmoid** activation for binary classification.
 
 ### 3. Training Strategy
 * **Optimizer:** Adam.
 * **Loss Function:** Binary Crossentropy.
 * **Callbacks:**
-    * `EarlyStopping`: Monitors validation loss to prevent overfitting.
+    * `EarlyStopping`: Monitors **Validation Recall** (stops if sensitivity doesn't improve for 3 epochs).
     * `ModelCheckpoint`: Saves the best model based on **Validation Recall**.
 
 ## 📂 Project Structure
 
 ```bash
-├── data/               # Dataset (Train/Test/Val)
-├── notebooks/          # Jupyter Notebooks for training
-├── models/             # Saved .keras models
+├── DATA/               # Dataset (Train/Test/Val)
+├── Pneumonia_CNN.ipynb # Jupyter Notebook for training
 ├── README.md           # Project documentation
 └── requirements.txt    # Python dependencies
 ```
@@ -61,13 +58,13 @@ We use a **Transfer Learning** approach:
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/your-username/DeepBreath.git](https://github.com/your-username/DeepBreath.git)
-    cd DeepBreath
+    git clone https://github.com/AthmaneMedAnis/Pneumonia-Detection-CNN.git
+    cd Pneumonia-Detection-CNN
     ```
 
 2.  **Install dependencies:**
     ```bash
-    pip install tensorflow numpy matplotlib pandas
+    pip install tensorflow
     ```
 
 3.  **Download the Data:**
