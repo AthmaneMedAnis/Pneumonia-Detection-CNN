@@ -12,7 +12,7 @@ In medical diagnosis, the cost of missing a positive case (False Negative) is ex
 
 This project utilizes **Transfer Learning** with a VGG16 architecture pre-trained on ImageNet.
 
-## 📊 Key Results
+## Key Results
 
 The model was evaluated on an unseen Test Set of 624 images.
 
@@ -78,7 +78,7 @@ We use a **Transfer Learning** approach:
 * **Fine-Tuning:** Unfreeze the last block of VGG16 to potentially improve precision.
 * **Deployment:** Wrap the model in a FastAPI container for real-time inference.
 
-## 🤝 Acknowledgements
+## Acknowledgements
 
 * Dataset provided by [Paul Mooney](https://www.kaggle.com/paultimothymooney) on Kaggle.
 * Original VGG16 paper: Simonyan & Zisserman (2014).
