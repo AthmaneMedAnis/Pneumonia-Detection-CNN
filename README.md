@@ -4,7 +4,7 @@
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-orange)
 ![Deep Learning](https://img.shields.io/badge/Deep%20Learning-CNN-red)
 
-## 📌 Project Overview
+## Project Overview
 
 The model is a Deep Learning model designed to assist medical professionals in detecting pneumonia from chest X-ray images. 
 
@@ -18,13 +18,13 @@ The model was evaluated on an unseen Test Set of 624 images.
 
 | Metric | Score | Clinical Interpretation |
 | :--- | :--- | :--- |
-| **Recall (Sensitivity)** | **98.46%** | 🥇 **Primary Goal.** The model detects ~98% of pneumonia cases. |
+| **Recall (Sensitivity)** | **98.46%** | **Primary Goal.** The model detects ~98% of pneumonia cases. |
 | **Accuracy** | **91.02%** | The model makes a correct prediction 9 times out of 10. |
 | **Precision** | **88.48%** | The False Positive rate is acceptable for a screening tool. |
 
 > *"The high recall score demonstrates the model's reliability as a preliminary screening tool for radiologists."*
 
-## 🧠 Methodology
+## Methodology
 
 ### 1. Data Preprocessing
 * **Dataset:** Chest X-Ray Images (Pneumonia) from Kaggle.
@@ -45,7 +45,7 @@ We use a **Transfer Learning** approach:
     * `EarlyStopping`: Monitors **Validation Recall** (stops if sensitivity doesn't improve for 3 epochs).
     * `ModelCheckpoint`: Saves the best model based on **Validation Recall**.
 
-## 📂 Project Structure
+## Project Structure
 
 ```bash
 ├── DATA/               # Dataset (Train/Test/Val)
@@ -53,7 +53,7 @@ We use a **Transfer Learning** approach:
 ├── README.md           # Project documentation
 └── requirements.txt    # Python dependencies
 ```
-## 🚀 How to Run
+## How to Run
 
 1.  **Clone the repository:**
     ```bash
@@ -72,7 +72,7 @@ We use a **Transfer Learning** approach:
 4.  **Run the Notebook:**
     Open `Pneumonia_CNN.ipynb` in Jupyter or Google Colab to train the model or evaluate the results.
 
-## 🔮 Future Improvements
+## Future Improvements
 
 * **Explainability:** Implement **Grad-CAM** to visualize the specific regions of the lung the model focuses on.
 * **Fine-Tuning:** Unfreeze the last block of VGG16 to potentially improve precision.
