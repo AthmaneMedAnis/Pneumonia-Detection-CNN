@@ -64,6 +64,7 @@ To ensure scalability and cost-effectiveness, the inference engine is deployed u
 ```bash
 ├── DATA/                      # Dataset (Train/Test/Val)
 ├── models/
+│   └── best_model.keras       # Best model after the training
 │   └── pneumonia_model.tflite # Quantized model for production
 ├── lambda_function.py         # AWS Lambda handler script  
 ├── lambda_test.py             # Local script to test the live API
