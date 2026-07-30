@@ -100,9 +100,9 @@ To ensure scalability and cost-effectiveness, the inference engine is deployed u
     * Create a .env file in the root directory and add the AWS Lambda URL.
     * Run the test script with a sample image:
 
-     ```bash
-    python lambda_test.py
-    ```
+        ```bash
+        python lambda_test.py
+        ```
 
 ## Future Improvements
 
