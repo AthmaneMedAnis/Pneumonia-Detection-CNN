@@ -85,7 +85,7 @@ To ensure scalability and cost-effectiveness, the inference engine is deployed u
 2. **Install dependencies:**
 
     ```bash
-    pip install tensorflow
+    pip install -r requirements.txt
     ```
 
 3. **Download the Data:**
@@ -108,7 +108,6 @@ To ensure scalability and cost-effectiveness, the inference engine is deployed u
 * **Explainability:** Implement **Grad-CAM** to visualize the specific regions of the lung the model focuses on.
 * **Fine-Tuning:** Unfreeze the last block of VGG16 to potentially improve precision.
 * **Front-End Interface**: Develop a lightweight web application using Streamlit to allow users to drag-and-drop X-rays for instant clinical feedback.
-* 
 
 ## Acknowledgements
 
